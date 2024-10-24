@@ -33,10 +33,10 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-         skopeo copy --all docker://crpi-s7csmzhdi7c87vpk.cn-shanghai.personal.cr.aliyuncs.com/rebirth2bird/kube-apiserver:v1.28.0 docker://rebirth2bird/rebirth2bird_repository/kube-apiserver:v1.28.0
-         skopeo copy --all docker://crpi-s7csmzhdi7c87vpk.cn-shanghai.personal.cr.aliyuncs.com/rebirth2bird/kube-controller-manager:v1.28.0 docker://rebirth2bird/rebirth2bird_repository/kube-controller-manager:v1.28.0
-         skopeo copy --all docker://crpi-s7csmzhdi7c87vpk.cn-shanghai.personal.cr.aliyuncs.com/rebirth2bird/kube-scheduler:v1.28.0 docker://rebirth2bird/rebirth2bird_repository/kube-scheduler:v1.28.0
-         skopeo copy --all docker://crpi-s7csmzhdi7c87vpk.cn-shanghai.personal.cr.aliyuncs.com/rebirth2bird/kube-proxy:v1.28.0 docker://rebirth2bird/rebirth2bird_repository/kube-proxy:v1.28.0
-         skopeo copy --all docker://crpi-s7csmzhdi7c87vpk.cn-shanghai.personal.cr.aliyuncs.com/rebirth2bird/pause:3.9 docker://rebirth2bird/rebirth2bird_repository/pause:3.9
-         skopeo copy --all docker://crpi-s7csmzhdi7c87vpk.cn-shanghai.personal.cr.aliyuncs.com/rebirth2bird/etcd:3.5.9-0 docker://rebirth2bird/rebirth2bird_repository/etcd:3.5.9-0
-         skopeo copy --all docker://crpi-s7csmzhdi7c87vpk.cn-shanghai.personal.cr.aliyuncs.com/rebirth2bird/coredns:v1.10.1 docker://rebirth2bird/rebirth2bird_repository/coredns:v1.10.1
+         skopeo copy --all crpi-s7csmzhdi7c87vpk.cn-shanghai.personal.cr.aliyuncs.com/rebirth2bird/kube-apiserver:v1.28.0 docker://rebirth2bird/rebirth2bird_repository/kube-apiserver:v1.28.0
+         skopeo copy --all crpi-s7csmzhdi7c87vpk.cn-shanghai.personal.cr.aliyuncs.com/rebirth2bird/kube-controller-manager:v1.28.0 docker://rebirth2bird/rebirth2bird_repository/kube-controller-manager:v1.28.0
+         skopeo copy --all crpi-s7csmzhdi7c87vpk.cn-shanghai.personal.cr.aliyuncs.com/rebirth2bird/kube-scheduler:v1.28.0 docker://rebirth2bird/rebirth2bird_repository/kube-scheduler:v1.28.0
+         skopeo copy --all crpi-s7csmzhdi7c87vpk.cn-shanghai.personal.cr.aliyuncs.com/rebirth2bird/kube-proxy:v1.28.0 docker://rebirth2bird/rebirth2bird_repository/kube-proxy:v1.28.0
+         skopeo copy --all crpi-s7csmzhdi7c87vpk.cn-shanghai.personal.cr.aliyuncs.com/rebirth2bird/pause:3.9 docker://rebirth2bird/rebirth2bird_repository/pause:3.9
+         skopeo copy --all crpi-s7csmzhdi7c87vpk.cn-shanghai.personal.cr.aliyuncs.com/rebirth2bird/etcd:3.5.9-0 docker://rebirth2bird/rebirth2bird_repository/etcd:3.5.9-0
+         skopeo copy --all crpi-s7csmzhdi7c87vpk.cn-shanghai.personal.cr.aliyuncs.com/rebirth2bird/coredns:v1.10.1 docker://rebirth2bird/rebirth2bird_repository/coredns:v1.10.1
